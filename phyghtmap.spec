@@ -9,6 +9,7 @@ Group: Sciences/Geosciences
 Requires: python2
 BuildRequires: python2
 BuildRequires: python2-setuptools
+Requires: python2-matplotlib
 BuildArch: noarch
 
 %description
