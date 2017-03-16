@@ -15,7 +15,7 @@ BuildArch: noarch
 
 # To test, use e.g.
 # wget https://planet.osm.ch/switzerland-padded.poly
-# phyghtmap --source=view3 --polygon=switzerland-padded.poly -o switzerland
+# phyghtmap --source=view1,view3,srtm1,srtm3 --viewfinder-mask=1 --earthdata-user=bero --earthdata-password='**********' --polygon=switzerland-padded.poly -o switzerland -j20
 
 %description
 A tool that generates OpenStreetMap contour lines from NASA SRTM or
