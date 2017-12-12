@@ -1,16 +1,19 @@
 Name: phyghtmap
-Version: 1.80
+Version: 2.0
 Release: 1
 Source0: http://katze.tfiu.de/projects/%{name}/%{name}_%{version}.orig.tar.gz
 Summary: OpenStreetMap contour line generator
 URL: http://wiki.openstreetmap.org/wiki/Phyghtmap
 License: GPLv2
 Group: Sciences/Geosciences
-Requires: python2
-BuildRequires: python2
-BuildRequires: python2-setuptools
-Requires: python2-matplotlib
-Requires: python2-beautifulsoup
+Requires: python
+BuildRequires: python
+BuildRequires: python-setuptools
+Requires: python-matplotlib
+Requires: python-numpy
+Requires: python-beautifulsoup4
+# For supporting GeoTiff input files
+Suggests: python-gdal
 BuildArch: noarch
 
 # To test, use e.g.
@@ -25,11 +28,11 @@ viewfinderpanoramas.org data.
 %setup -q
 
 %build
-python2 setup.py build
+python setup.py build
 
 %install
-python2 setup.py install --root=%{buildroot}
+python setup.py install --root=%{buildroot}
 
 %files
 %{_bindir}/*
-%{python2_sitelib}/*
+%{python_sitelib}/*
