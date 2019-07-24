@@ -1,6 +1,6 @@
 Name: phyghtmap
-Version: 2.20
-Release: 1
+Version:	2.21
+Release:	1
 Source0: http://katze.tfiu.de/projects/%{name}/%{name}_%{version}.orig.tar.gz
 Summary: OpenStreetMap contour line generator
 URL: http://wiki.openstreetmap.org/wiki/Phyghtmap
