@@ -3,7 +3,7 @@ Version:	2.23
 Release:	1
 Source0: http://katze.tfiu.de/projects/%{name}/%{name}_%{version}.orig.tar.gz
 Summary: OpenStreetMap contour line generator
-URL: http://wiki.openstreetmap.org/wiki/Phyghtmap
+URL: https://wiki.openstreetmap.org/wiki/Phyghtmap
 License: GPLv2
 Group: Sciences/Geosciences
 Requires: python
